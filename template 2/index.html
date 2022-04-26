@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web 18 Unit-2 C3</title>
+    <style>
+
+      #reports>div{
+        height: auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top:20px;
+        
+
+      }
+        #reports{
+          display: grid;
+          grid-template-columns: repeat(4,1fr);
+          gap:20px;
+         
+          
+        }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="container">
+      <div>
+        <h1>Masai Evaluations Tracker</h1>
+        <form id="form">
+            <!-- When this form get submitted update the DOM According to the question -->
+          <input placeholder="Name" id="name" type="text"  />
+          <select id="batch">
+            <option value="WEB16">WEB16</option>
+            <option value="WEB17">WEB17</option>
+            <option value="WEB18">WEB18</option>
+          </select>
+          <select id="type">
+            <option value="DSA">DSA</option>
+            <option value="Coding">Coding</option>
+          </select>
+          <input placeholder="Student Code" id="stuent_code" type="text" />
+          <select id="unit">
+            <option value="Unit-1">Unit-1</option>
+            <option value="Unit-2">Unit-2</option>
+            <option value="Unit-3">Unit-3</option>
+            <option value="Unit-4">Unit-4</option>
+          </select>
+          <select id="sprint">
+            <option value="Sprint-1">Sprint-1</option>
+            <option value="Sprint-2">Sprint-2</option>
+            <option value="Sprint-3">Sprint-3</option>
+            <option value="Sprint-4">Sprint-4</option>
+          </select>
+          <input placeholder="Score(0-10)" id="score" type="number" />
+          <input type="submit" />
+        </form>
+      </div>
+      <div id="reports">
+        <!-- All the cards that get appended with Javascript on form submit goes here -->
+      </div>
+    </div>
+  </body>
+</html>
+<script>
+
+  document.querySelector("form").addEventListener("submit",myFunction)
+
+  function myFunction(){
+
+    event.preventDefault();
+
+    var name=document.querySelector("#name").value
+
+    var batch=document.querySelector("#batch").value
+    console.log(batch)
+
+    var type=document.querySelector("#type").value
+    console.log(type)
+
+    var student_Code=document.querySelector("#student_Code")
+    
+
+    var unit=document.querySelector("#unit").value
+    console.log(unit)
+
+    var sprint=document.querySelector("#sprint").value
+    console.log(sprint)
+
+    var score=document.querySelector("#score").value
+
+    var btn =document.createElement("div")
+
+    var heading =document.createElement("h1")
+    heading.innerText=name;
+    heading.style.marginLeft="20px"
+
+    var para1 =document.createElement("p")
+    para1.innerText=batch;
+    para1.style.marginLeft="20px"
+
+    var para2 =document.createElement("p")
+    para2.innerText=type;
+    para2.style.marginLeft="20px"
+
+    var para3 =document.createElement("p")
+    para3.innerText=student_Code;
+    para3.style.marginLeft="20px"
+
+    var para4 =document.createElement("p")
+    para4.innerText=unit;
+    para4.style.marginLeft="20px"
+
+    var para5 =document.createElement("p")
+    para5.innerText=sprint;
+    para5.style.marginLeft="20px"
+
+    var para6 =document.createElement("p")
+    para6.innerText=score;
+    para6.style.marginLeft="20px"
+
+    var show=document.createElement("h3")
+
+    if(score<=3){
+      show.innerText="Learning"
+      show.style.color="red"
+      show.style.marginLeft="20px"
+    }
+
+      else if(score<=7)
+      {
+        show.innerText="Achieving"
+        show.style.color="orange"
+        show.style.marginLeft="20px"
+      }
+      else
+      {
+        show.innerText="Mastery"
+        show.style.color="green"
+        show.style.marginLeft="20px"
+      }
+
+      var del=document.createElement("div")
+      del.innerText="Delete"
+      del.style.width="20%"
+      del.style.marginLeft="20px"
+      del.style.cursor="pointer"
+      del.style.border="1px solid"
+      del.style.backgroundColor="gainsboro"
+      del.style.borderRadius="4px"
+      del.style.padding="1px 5px 1px 5px"
+      del.style.marginBottom="10px"
+      del.style.textAlign="center"
+      del.style.borderColor="darkslategray"
+      
+
+      del.addEventListener("click",myFun)
+      function myFun()
+      {
+          event.target.parentNode.remove()
+      }
+
+      btn.append(heading,para1,para2,para3,para4,para5,para6,show,del)
+
+      document.querySelector("#reports").append(btn)
+
+  }
+</script>
+
