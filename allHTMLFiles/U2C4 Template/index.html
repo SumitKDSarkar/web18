@@ -31,5 +31,25 @@
   <script>
     //write js code here
     // we are using form here, make sure you follow all steps of form
+
+    document.querySelector("#form").addEventListener("submit",myFunction);
+    var jobArr = JSON.parse(localStorage.getItem("contacts")) || [];
+
+
+    function myFunction(){
+      event.preventDefault();
+      var jobObj={
+        name:document.querySelector("#name").value,
+        mobile:document.querySelector("#mobile").value,
+        type:document.querySelector("#type").value,
+      };
+      jobArr.push(jobObj);
+   
+
+    localStorage.setItem("contacts",JSON.stringify(jobArr));
+    document.querySelector("#name").value = "";
+    document.querySelector("#mobile").value = "";
+
+  }
   </script>
 </html>

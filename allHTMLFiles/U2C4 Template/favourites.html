@@ -23,7 +23,7 @@
             <th>Type</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody id="body">
           <!-- Append your output to tbody -->
         </tbody>
       </table>
@@ -32,5 +32,27 @@
   <script>
     //code your js part here
     //append your output to tbody
+    var favourites=JSON.parse(localStorage.getItem("favouritesObj"))||[];
+
+    favourites.map(function (elem){
+      var row = document.createElement("tr")
+
+      var td1 = document.createElement("td")
+      td1.innerText=elem.name;
+
+      var td2 = document.createElement("td")
+      td2.innerText=elem.mobile;
+
+      var td3 = document.createElement("td")
+      td3.innerText=elem.type;
+
+      row.append(td1,td2,td3)
+
+      document.querySelector("tbody").append(row)
+
+
+    });
+
+
   </script>
 </html>
