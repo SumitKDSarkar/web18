@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(3,auto);
+        gap: 20px;
+
+
+    }
+    p+img{
+        height: 50px;
+    }
+
+</style>
+<body>
+    <div id="container">
+
+    </div>
+    
+</body>
+</html>
+<script>
+    var investorsData=[
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    
+    
+        {avtar:
+            "https://masai-website-images.s3.ap-south-1.amazonaws.com/Ankush_Sachdeva_Sharechat_4e44dbbe6b.jpg",
+        name:"Ankush Sachdeva",
+        position:"Co-Founder & CEO",
+        logo:"https://masai-website-images.s3.ap-south-1.amazonaws.com/sharechat_rect_73d95cd4e1.svg",
+        },
+    ];
+
+            investorsData.forEach(function(elem){
+                var box=document.createElement("div");
+                var avtar=document.createElement("img");
+                avtar.setAttribute("src",elem.avtar)
+
+                var name = document.createElement("h3");
+                name.innerText=elem.name;
+
+                var position = document.createElement("p");
+                position.innerText=elem.position;
+
+                var logo=document.createElement("img");
+                logo.setAttribute("src",elem.logo)
+
+                box .append(avtar,name,position,logo)
+
+                document.querySelector("#container").append(box);
+            })
+</script>

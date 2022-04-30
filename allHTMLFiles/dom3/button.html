@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="container">
+    
+</body>
+</html>
+<script>
+    var buttonObj=[
+        { textContent:"Primary",color:"white",bgColor:"blue"},
+        { textContent:"Secondary",color:"white",bgColor:"gray"},
+        { textContent:"Danger",color:"white",bgColor:"red"},
+        { textContent:"Warning",color:"black",bgColor:"yellow"},
+        { textContent:"Sumit",color:"white",bgColor:"green"},
+        { textContent:"Vinay",color:"white",bgColor:"lightgreen"},
+        { textContent:"Roshni",color:"blue",bgColor:"white"},
+        { textContent:"Primary",color:"green",bgColor:"white"},
+        { textContent:"Primary",color:"white",bgColor:"blue"},
+    ];
+
+    buttonObj.forEach(function(elem){
+        console.log(elem.bgColor);
+        var btn = document.createElement("button");
+        btn.innerText=elem.textContent
+        btn.style.backgroundColor=elem.bgColor
+        btn.style.color=elem.color
+        document.querySelector("body").append(btn);
+    });
+</script>

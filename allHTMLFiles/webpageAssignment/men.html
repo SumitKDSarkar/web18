@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <h1><a href="men's">Men</a></h1>
+        <h1><a href="women's">Women</a></h1>
+    </div>
+
+    <div id="cards"></div>
+
+    
+    
+</body>
+</html>
+<script>
+
+
+    var mensData=[
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2297835/2018/3/14/11521020286596-Roadster-Men-Tshirts-4241521020286395-1.jpg",
+            name:"Men Navy Printed Cotton Pure Cotton T-shirt",
+            price:"$40",
+
+        },
+        {
+      imgUrl:
+        "https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name: " Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/2297835/2018/3/14/11521020286596-Roadster-Men-Tshirts-4241521020286395-1.jpg",
+            name:"Men Navy Printed Cotton Pure Cotton T-shirt",
+            price:"$40",
+
+        },
+      { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+    { 
+        imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/14851918/2021/10/28/c3ba70e2-8839-4109-a548-ea157ba21eb41635401026228-Levis-Men-Shirts-8131635401025659-1.jpg",
+      name:"Men Rust Red & Blue Slim Fit Tartan Checked Pure Cotton Casual Shirt ",
+            
+      price:"$20",
+    },
+
+
+    ];
+
+    mensData.forEach(function(elem){
+        var urlImg=document.createElement("img");
+        urlImg.setAttribute("src",elem.imgUrl);
+        urlImg.style.width="100%";
+        urlImg.style.height="65%";
+
+        var name=document.createElement("h6");
+        name.innerText=elem.name;
+        name.style.marginLeft="10px";
+        name.style.fontSize="15px";
+        name.style.marginTop="10px";
+
+        var price=document.createElement("p");
+        price.innerText=elem.price;
+        price.style.marginLeft="10px";
+        price.style.fontSize="30px";
+        price.style.marginTop="-20px";
+
+        var btn=document.createElement("button");
+        btn.innerText="Add to cart";
+        btn.style.cursor="pointer";
+        btn.style.marginBottom="20px";
+        btn.style.marginLeft="10px";
+        btn.style.marginTop="-20px";
+
+
+        var div=document.createElement("div")
+        div.append(urlImg,name,price,btn);
+
+        var cards=document.querySelector("#cards")
+        cards.append(div)
+    })
+</script>

@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>marage</title>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <select id ="gender">
+            <option value="">Select Gender</option>
+            <option value="Male">Male</option>
+            <option value="Male">Female</option>
+
+        </select>
+        <input id="yob" type="number"/>
+        <button onClick="ageValid()">Submit</button>
+
+    </body>
+</html>
+<script>
+    function ageValid(){
+        var fillGender = document.getElementById("gender").value;
+        var age = 2022-(document.getElementById("yob").value);
+        if(fillGender=="Male"&&age>=21){
+            alert("You are legally to get married.");
+        }
+        else if(fillGender=="Male" && age<21){
+            alert("You are not eligible to get married.");
+        }
+        else if(fillGender=="Female" && age>=21){
+            alert("You are  eligible to get married.");
+        }
+        else if(fillGender=="Female" && age<21){
+            alert("You are not eligible to get married.");
+        }
+        
+    }
+</script>

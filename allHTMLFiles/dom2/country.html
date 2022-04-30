@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="country"> 
+        <option>Select Country </option>
+       <option>India </option>                   
+       <option>United States of America</option>
+       <option>China</option>
+       <option>Nepal</option>
+       <option>Australia</option>
+       <option>France</option>
+       <option>Germany</option>
+       <option>South Africa</option>
+       <option>Nigeria</option>
+       <option>Mexico</option>
+       <option>Argentina</option>
+       <option>Brazil</option>
+       <option>Canada</option>
+       <option>Singapore</option>
+       <option>Sweden</option>
+
+    </select>
+    <button onclick="myFunction()">Sumbit</button>
+    
+</body>
+</html>
+<script>
+    function myFunction(){
+        var country=document.querySelector("#country").value;
+        
+        switch(country){
+            case  "India":alert("The continent in Asia")
+            break;
+
+            case  "China":alert("The continent in Asia")
+            break;
+
+            case  "Nepal":alert(" The continent in Asia")
+            break;
+
+            case  "United States of America":alert(" The continent in North America")
+            break;
+
+            case  "Australia":alert(" The continent in Australia")
+            break;
+
+            case  "France":alert(" The continent in Europe")
+            break;
+
+            case  "Germany":alert("The continent in Europe")
+            break;
+
+            case  "South Africa":alert("The continent in Africa ")
+            break;
+
+            case  "Nigeria":alert("The continent in Africa")
+            break;
+
+            case  "Mexico":alert("The continent in North America")
+            break;
+
+            case  "Argentina":alert("The continent in South America")
+            break;
+
+            case  "Brazil":alert(" The continent in Africa")
+            break;
+
+            case  "Canada":alert(" The continent in North America")
+            break;
+
+            case  "Singapore":alert(" The continent in Asia")
+            break;
+
+             case  "Sweden":alert(" The continent in Europe")
+            break;
+        }
+    }
+            </script>

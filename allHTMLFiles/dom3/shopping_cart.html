@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2C3 Mock</title>
+    <style>
+      body{
+        background-color: rgba(54, 84, 202, 0.788);
+      }
+      #report{
+          
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        gap: 10px;
+        background-color: white;
+
+      }
+      #report>div{
+        margin: auto;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        border-radius: 9px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 1% 6% 2% 6%;
+        /* background-color: rgb(245, 216, 221); */
+
+      }
+      #report>div:nth-child(even){
+          background-color: rgb(198, 216, 248);
+      }
+      #report>div:nth-child(odd){
+          background-color: rgb(246, 248, 238);
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <select id="month">
+        <option value="January">JANUARY</option>
+        <option value="February">FEB</option>
+        <option value="MARCH">MARCH</option>
+        <option value="APRIL">APRIL</option>
+        <option value="MAY">MAY</option>
+        <option value="JUNE">JUNE</option>
+        <option value="JULY">JULY</option>
+        <option value="AUGUST">AUGUST</option>
+        <option value="SEPETEMBER">SEPETEMBER</option>
+        <option value="OCTOBER">OCTOBER</option>
+        <option value="NOVEMBER">NOVEMBER</option>
+        <option value="DECEMBER">DECEMBER</option>
+      </select>
+
+      <input id="income" type="number" placeholder="Enter Income" />
+
+      <input id="expense" type="number" placeholder="Enter expense" />
+
+      <input type="submit" id="btn" />
+    </form>
+
+    <div id="report">
+          <!-- Append your cards here -->
+    </div>
+  </body>
+</html>
+
+<script>
+
+  var btn=document.getElementById("btn");
+  btn.addEventListener("click",myFun);
+//   event.preventDefault();
+  function myFun(){
+    event.preventDefault();
+      var month=document.getElementById("month").value;
+      var income=document.getElementById("income").value;
+      var expense=document.getElementById("expense").value;
+      income=+income;
+      expense=+expense;
+
+      var h3=document.createElement("h1");
+      h3.innerText=month;
+      var p1=document.createElement("p");
+      p1.innerText="Income : "+income;
+      var p2=document.createElement("p");
+      p2.innerText="Expense : "+expense;
+      var p3=document.createElement("h3");
+         if(income<expense){
+              p3.innerText="DEBT";
+              p3.style.color="red";
+         }else if(income>expense){
+              p3.innerText="SAVE";
+              p3.style.color="Green";
+        }else{
+              p3.innerText="BREAKEVEN";
+              p3.style.color="orange";
+            }
+
+    var del=document.createElement("p");
+    del.innerText="Delete"
+    del.style.color="white";
+    del.style.backgroundColor="red";
+    del.style.fontSize="22px"
+    del.style.borderRadius="10px"
+    del.style.textAlign="center"
+    del.style.cursor="pointer"
+    del.addEventListener("click",delet);
+    function delet(){
+        event.target.parentNode.remove();
+    }
+    
+
+
+            var divMain=document.createElement("div");
+            divMain.append(h3,p1,p2,p3,del)
+            var div=document.getElementById("report");
+            div.append(divMain);
+
+
+
+  }
+  
+</script>

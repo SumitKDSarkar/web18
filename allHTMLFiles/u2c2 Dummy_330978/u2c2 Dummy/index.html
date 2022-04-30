@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    #header>h1{
+      text-align: center;
+    }
+    #blogs-container{
+      display: grid;
+      grid-template-columns:repeat(3,1fr);
+      grid-template-rows: auto;
+      gap: 50px;
+      justify-items: center;
+
+      
+    }
+    #blogs-container>div{
+
+      height: 250px;
+      width: 300px;
+    }
+    #blogs-container>div>p{
+      color: rgb(121, 116, 116);
+      margin-left: 10px;
+    }
+    #blogs-container>div>h4{
+      margin-left:10px;
+    }
+    #blogs-container>div>img{
+      height: 170px;
+      width: 100%;
+    }
+    #catagory-container{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: repeat(2, 1fr);
+      gap: 20px 20px ;
+      justify-items: center;
+      
+      background-color: rgb(240, 245, 245);
+    }
+    #catagory-container>div{
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        height: 200px;
+        width: 200px;      
+    }
+    #catagory-container>div>h4{
+      margin-left: 10px;
+    }
+    #catagory-container>div>p{
+      margin-left: 10px;
+      color: rgb(129, 122, 122);
+    }
+    #catagory-container>div>img{
+      height: 50px;
+      width: 50px;
+      margin-top: 20px;
+      margin-left: 20px;
+    }
+
+
+
+
+
+    
+    /* Medium screens */
+    @media all and (min-width:451px) and (max-width:750px) {
+      #id>h1{
+        text-align: center;
+      }
+     #blogs-container{
+      grid-template-columns:repeat(2,1fr);
+      grid-template-rows: auto auto;
+
+        
+      }
+      #catagory-container{
+        grid-template-columns:repeat(3,1fr);
+        grid-template-rows:repeat(4,1fr);
+
+      }
+    }
+
+
+    /* Small Screens */
+    @media all and (min-width:100px) and (max-width:450px) {
+      #id>h1{
+        text-align: center;
+      }
+     #blogs-container{
+      grid-template-columns:repeat(1,1fr);
+      grid-template-rows:repeat(3,1fr);
+
+        
+      }
+      #catagory-container{
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        
+        
+
+      }
+      #catagory-container>div{
+        width: 150px;
+        overflow:scroll;
+        gap: 10px;
+
+    }
+      
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Our Blog Posts</h1>
+  </div>
+  <div id="blogs-container">
+    <!-- All the Blogs will be here  -->
+    <div>
+      
+      <!-- the images, date and the blog heading will be here  -->
+      <img src="https://preview.colorlib.com/theme/sogo/images/ximg_1.jpg.pagespeed.ic.sI14MfHd8f.webp"/>
+        <p>20,January 2019</p>
+        <h4>Architectural An Modern</h4>
+    </div>
+    <div>
+      <img src=" https://preview.colorlib.com/theme/sogo/images/ximg_2.jpg.pagespeed.ic.Y_xvNxfEhu.webp"
+      alt="picture"/>
+      <p>20,January 2019</p>
+        <h4>Architectural An Modern</h4>
+      
+      <!-- the images, date and the blog heading will be here  -->
+    </div>
+    <div>
+      <img src="https://preview.colorlib.com/theme/sogo/images/ximg_3.jpg.pagespeed.ic.mYPnC0rXDl.webp"
+      alt="picture"/>
+      <p>20,January 2019</p>
+        <h4>Architectural An Modern</h4>
+
+      <!-- the images, date and the blog heading will be here  -->
+    </div>
+  </div>
+  <div id="catagory-container">
+    <!-- All the boxes for blog catagory goes here  -->
+
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt="picture"/>
+      <h4>Creative Design</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt="picture"/>
+      <h4>Digital Marketing</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt="picture"/>
+      <h4>Application Design</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt="picture"/>
+      <h4>Web Devlopment</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt="picture"/>
+      <h4>Branding</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt="picture"/>
+      <h4>Graphics Design</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt="picture"/>
+      <h4>Email Marketing</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+    </div>
+    <div>
+      <!-- The image, h3 tag, p tag etc will be here  -->
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkYWEei4bZgP2rOcWk0oPcbNLlxJSy1511lw&usqp=CAU"
+      alt=""/>
+      <h4>Web Design</h4>
+      <p>Far far way behind the,world mauntains, far from the countries Vokalia</p>
+    </div>
+  </div>
+</body>
+
+</html>

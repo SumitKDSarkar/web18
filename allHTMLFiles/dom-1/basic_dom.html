@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <input type="number" id="age">
+    <select id="gender">
+        <option value="">SELECT</option>
+        <option value="MALE">M</option>
+        <option value="FEMALE">F</option>
+    </select>
+    <input type="email" id="email">
+    <input type="number" id="mob">
+    <button onclick="myFunction()">Submit</button>
+
+    
+</body>
+</html>
+<script>
+        var data=[];
+    function myFunction(){
+        
+        var obj={};
+        var name=document.querySelector("#name").value;
+        var age=document.querySelector("#age").value;
+        var gender=document.querySelector("#gender").value;
+        var email=document.querySelector("#email").value;
+        var mob=document.querySelector("#mob").value;
+        
+        obj.Name=name;
+        obj.Age=age;
+        obj.Gender=gender;
+        obj.Email=email;
+        obj.Mobile=mob;
+
+        data.push(obj);
+        console.log(data);
+        
+    }
+    
+    
+
+</script>

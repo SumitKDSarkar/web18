@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #header>h1{
+        text-align: center;
+      }
+      #header>p{
+        text-align: center;
+        margin-top: -10px;
+      }
+      #doctors{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:auto ;
+        gap: 20px;
+        width: 85%;
+        margin: auto;
+      }
+      #doctors>div{
+
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      }
+      #doctors>div>img{
+        width: 100%;
+      }
+      #doctors>div>h3{
+        text-align: center;
+      }
+      #doctors>div>h6{
+        text-align: center;
+        margin-top: -10px;
+      }
+      #doctors>div>p{
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .buttons-div{
+      
+        justify-content: space-between;
+        display: flex;
+
+
+      }
+      .buttons-div>button{
+        border-radius: 8px;
+        background-color: rgb(224, 95, 44);
+        color: white;
+        padding: 10px 15px 10px 15px;
+        border: 0px;
+      }
+      .buttons-div>button:nth-child(1){
+        color: rgb(138, 116, 236);
+        background-color: rgb(237, 236, 248);
+
+      }
+      .buttons-div>button:hover{
+        background-color: rgb(238, 106, 30);
+      }
+      #service{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,230px);
+        gap: 20px 30px;
+        width: 70%;
+        margin: auto;
+      }
+      #service>div{
+        margin-top: 30px;
+      }
+      #service>div>h5{
+        text-align: center;
+      
+      }
+      #service>div>p{
+        text-align: center;
+      }
+      #service>div>img{
+        display: flex;
+        margin: auto;
+      }
+
+
+      /* Medium screens */
+      @media all and (min-width: 451px) and (max-width: 750px) {
+        #doctors{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows:repeat(2,430px) ;
+        width: 90%;
+        margin: auto;
+       
+   
+      }
+      #service{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,230px);
+        width: 40%;
+        margin: auto;
+      }
+
+      }
+      /* Small screens */
+      @media all and (min-width: 100px) and (max-width: 450px) {
+        #doctors{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows:repeat(4,400px) ;
+        width: 90%;
+        margin: auto;
+   
+      }
+      #service{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,230px);
+        width: 40%;
+        margin: auto;
+      }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Our Specialist</h1>
+      <p>
+        Green above he cattle god saw day multiply under fill in the cattle fowl
+        a all, living, tree word link available in the service for subdue fruit.
+      </p>
+    </div>
+    <!-- Top-section -->
+    <div id="doctors">
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="picture" />
+        <!-- keep image,h3,h6 here -->
+        <h3>ETHEL DAVIS</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <P>If you are looking at blank certificates on the web,you you may be very confuesed at the</P>
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="picture" />
+        <!-- keep image,h3,h6 here -->
+        <h3>ETHEL DAVIS</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <P>If you are looking at blank certificates on the web,you you may be very confuesed at the</P>
+        <!-- keep image,h3,h6 here -->
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="picture" />
+        <!-- keep image,h3,h6 here -->
+        <h3>ETHEL DAVIS</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <P>If you are looking at blank certificates on the web,you you may be very confuesed at the</P>
+        <!-- keep image,h3,h6 here -->
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+      <div>
+        <img src="https://preview.colorlib.com/theme/medino/assets/images/doctor1.jpg.webp" alt="picture" />
+        <!-- keep image,h3,h6 here -->
+        <h3>ETHEL DAVIS</h3>
+        <h6>SR.FACULTY DATA SCIENCE</h6>
+        <P>If you are looking at blank certificates on the web,you you may be very confuesed at the</P>
+        <!-- keep image,h3,h6 here -->
+        <div class="buttons-div">
+          <button>Know More</button>
+          <button>Book Now</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom section  -->
+    <div id="service">
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg"
+              alt="picture"/>
+              <h5>Teeth Washing</h5>
+              <p>In pretium neque a libero congue.Elit diam lectus.Present lacinia vitac sit mattix mollis maximux</p>
+        <!-- keep image,h5,p here -->
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg"
+              alt="picture"/>
+              <h5>Teeth Washing</h5>
+              <p>In pretium neque a libero congue.Elit diam lectus.Present lacinia vitac sit mattix mollis maximux</p>
+        <!-- keep image,h5,p here -->
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg"
+              alt="picture"/>
+              <h5>Teeth Washing</h5>
+              <p>In pretium neque a libero congue.Elit diam lectus.Present lacinia vitac sit mattix mollis maximux</p>
+        <!-- keep image,h5,p here -->
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg"
+              alt="picture"/>
+              <h5>Teeth Washing</h5>
+              <p>In pretium neque a libero congue.Elit diam lectus.Present lacinia vitac sit mattix mollis maximux</p>
+        <!-- keep image,h5,p here -->
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg"
+              alt="picture"/>
+              <h5>Teeth Washing</h5>
+              <p>In pretium neque a libero congue.Elit diam lectus.Present lacinia vitac sit mattix mollis maximux</p>
+        <!-- keep image,h5,p here -->
+      </div>
+      <div>
+        <img src="https://masai-course.s3.ap-south-1.amazonaws.com/editor/uploads/2022-04-16/bottom_132437.jpeg"
+              alt="picture"/>
+              <h5>Teeth Washing</h5>
+              <p>In pretium neque a libero congue.Elit diam lectus.Present lacinia vitac sit mattix mollis maximux</p>
+        <!-- keep image,h5,p here -->
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="main">
+        <h1><a href="men's">Men</a></h1>
+        <h1><a href="women's">Women</a></h1>
+    </div>
+
+    <div id="cards"></div>
+
+    
+    
+</body>
+</html>
+<script>
+
+
+    var mensData=[
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+        {
+            imgUrl:"https://assets.myntassets.com/f_webp,dpr_1.0,q_60,w_210,c_limit,fl_progressive/assets/images/13764318/2021/4/7/c6a16eb7-833d-4df2-8e0e-cb694a8a83e51617792817180-Varanga-Peach-Bandhani-Printed-Embroidered-Kurta-69516177928-1.jpg",
+            name:"Women Mauve & White Bandhani Printed Pure Cotton Kurta",
+            price:"$40",
+
+        },
+    ];
+
+    mensData.forEach(function(elem){
+        var urlImg=document.createElement("img");
+        urlImg.setAttribute("src",elem.imgUrl)
+
+        var name=document.createElement("h6");
+        name.innerText=elem.name;
+        name.style.marginLeft="10px";
+        name.style.fontSize="15px";
+        name.style.marginTop="10px";
+
+        var price=document.createElement("p");
+        price.innerText=elem.price;
+        price.style.marginLeft="10px";
+        price.style.fontSize="30px";
+        price.style.marginTop="-20px";
+
+        var btn=document.createElement("button");
+        btn.innerText="Add to cart";
+        btn.style.cursor="pointer";
+        btn.style.marginBottom="20px";
+        btn.style.marginLeft="10px";
+        btn.style.marginTop="-20px";
+
+        var div=document.createElement("div")
+        div.append(urlImg,name,price,btn);
+
+        var cards=document.querySelector("#cards")
+        cards.append(div)
+    })
+</script>

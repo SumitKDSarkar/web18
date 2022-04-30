@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>U2C3 Mock</title>
+    <style>
+
+      #report>div{
+        height: auto;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        margin-top: 20px;
+        border-radius: 8px;
+        
+      }
+      #report{
+        display: grid;
+        grid-template-columns:repeat(4,1fr);
+        gap: 20px;
+      }
+
+      
+
+    </style>
+  </head>
+  <body>
+    <form>
+      <select id="month">
+        <option value="January">JANUARY</option>
+        <option value="February">FEB</option>
+        <option value="MARCH">MARCH</option>
+        <option value="APRIL">APRIL</option>
+        <option value="MAY">MAY</option>
+        <option value="JUNE">JUNE</option>
+        <option value="JULY">JULY</option>
+        <option value="AUGUST">AUGUST</option>
+        <option value="SEPETEMBER">SEPETEMBER</option>
+        <option value="OCTOBER">OCTOBER</option>
+        <option value="NOVEMBER">NOVEMBER</option>
+        <option value="DECEMBER">DECEMBER</option>
+      </select>
+
+      <input id="income" type="number" placeholder="Enter Income" />
+
+      <input id="expense" type="number" placeholder="Enter expense" />
+
+      <input type="submit" />
+    </form>
+
+    <div id="report">
+          <!-- Append your cards here -->
+    </div>
+  </body>
+</html>
+
+<script>
+
+  document.querySelector("form").addEventListener("submit",myFunction)
+
+  function myFunction(){
+
+    event.preventDefault();
+
+    var month = document.querySelector("#month").value
+    console.log(month)
+
+    var income = document.querySelector("#income").value
+
+    var expense = document.querySelector("#expense").value
+
+    var btn=document.createElement("div")
+
+    var heading=document.createElement("h1")
+    heading.innerText=month;
+    heading.style.marginLeft="20px"
+
+    var para=document.createElement("p")
+    para.innerText=income;
+    para.style.marginLeft="20px"
+
+    var para1=document.createElement("p")
+    para1.innerText=expense;
+    para1.style.marginLeft="20px"
+
+    var show=document.createElement("h3")
+    
+
+    if (income>expense){
+      show.innerText="SAVE"
+      show.style.backgroundColor="green"
+      show.style.width="40%";
+      show.style.marginLeft="20px"
+    }
+    else if(income==expense){
+      show.innerText="BreakEven"
+      show.style.backgroundColor="orange"
+      show.style.width="40%";
+      show.style.marginLeft="20px"
+    }
+    else{
+      show.innerText="DEBT"
+      show.style.backgroundColor="red"
+      show.style.width="40%";
+      show.style.marginLeft="20px"
+
+    }
+
+    var del=document.createElement("div")
+    del.innerText="DELETE";
+    del.style.backgroundColor="red"
+    del.style.color="white"
+    del.style.cursor="pointer"
+    del.style.width="40%";
+    del.style.marginLeft="20px"
+    del.addEventListener("click",myFun)
+    function myFun(){
+      event.target.parentNode.remove()
+    }
+
+    btn.append(heading,para,para1,show,del)
+
+    document.querySelector("#report").append(btn)
+
+    
+  }
+
+  
+  
+</script>
